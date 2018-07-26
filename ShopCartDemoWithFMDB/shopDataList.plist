@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>goodsId</key>
+		<string>00001</string>
+		<key>goodsName</key>
+		<string>矿泉水</string>
+		<key>goodsPrice</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>goodsId</key>
+		<string>00002</string>
+		<key>goodsName</key>
+		<string>薯片</string>
+		<key>goodsPrice</key>
+		<string>5</string>
+	</dict>
+</array>
+</plist>

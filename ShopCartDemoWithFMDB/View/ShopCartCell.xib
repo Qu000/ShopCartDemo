@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="159" id="KGk-i7-Jjw" customClass="ShopCartCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="159"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="158.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商品ID：" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pt4-86-KTR">
+                        <rect key="frame" x="10" y="30" width="355" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="qIc-oZ-byH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OGq-Rq-Lvr">
+                        <rect key="frame" x="31" y="80" width="313" height="40"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yuF-D6-plO">
+                                <rect key="frame" x="0.0" y="0.0" width="71" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.92304484649999996" blue="0.89170168480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="-">
+                                    <color key="titleColor" red="0.22352941179999999" green="0.72549019609999998" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickSubBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kpT-TM-NQV"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tfG-jZ-Kil">
+                                <rect key="frame" x="81" y="0.0" width="70.5" height="40"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pF-Te-mR0">
+                                <rect key="frame" x="161.5" y="0.0" width="71" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.92304484649999996" blue="0.89170168480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" red="0.22352941179999999" green="0.72549019609999998" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickAddBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="iLR-Fv-cD0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKp-ji-py7">
+                                <rect key="frame" x="242.5" y="0.0" width="70.5" height="40"/>
+                                <color key="backgroundColor" red="1" green="0.92304484649999996" blue="0.89170168480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="删除">
+                                    <color key="titleColor" red="0.22352941179999999" green="0.72549019609999998" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickDeleteBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="X6b-gI-jYH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="tfG-jZ-Kil" firstAttribute="width" secondItem="yuF-D6-plO" secondAttribute="width" id="5HE-e9-NzZ"/>
+                            <constraint firstItem="LKp-ji-py7" firstAttribute="width" secondItem="yuF-D6-plO" secondAttribute="width" id="Arc-yT-KaR"/>
+                            <constraint firstAttribute="height" constant="40" id="F6K-xN-Zpm"/>
+                            <constraint firstItem="1pF-Te-mR0" firstAttribute="width" secondItem="yuF-D6-plO" secondAttribute="width" id="xTz-Ul-v7U"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="OGq-Rq-Lvr" secondAttribute="trailing" constant="15" id="5Lx-oy-aD1"/>
+                    <constraint firstItem="Pt4-86-KTR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="5gm-o4-MSO"/>
+                    <constraint firstItem="Pt4-86-KTR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Fgs-Xk-r3o"/>
+                    <constraint firstItem="OGq-Rq-Lvr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="Jhw-NJ-j4P"/>
+                    <constraint firstItem="OGq-Rq-Lvr" firstAttribute="top" secondItem="Pt4-86-KTR" secondAttribute="bottom" constant="20" id="blx-7m-uZ9"/>
+                    <constraint firstAttribute="trailing" secondItem="Pt4-86-KTR" secondAttribute="trailing" constant="10" id="uEO-Qg-A5V"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="shopIDLab" destination="Pt4-86-KTR" id="pqs-Al-SE0"/>
+                <outlet property="shopNumText" destination="tfG-jZ-Kil" id="w9P-L0-lRh"/>
+            </connections>
+            <point key="canvasLocation" x="-7.5" y="40.5"/>
+        </tableViewCell>
+    </objects>
+</document>
